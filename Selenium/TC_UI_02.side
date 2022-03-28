@@ -1,0 +1,107 @@
+{
+  "id": "7028f212-8be1-455d-9378-c0323bd2339f",
+  "version": "2.0",
+  "name": "https://www.alza.at/",
+  "url": "https://www.alza.at",
+  "tests": [{
+    "id": "c426c3ed-c72c-4afa-9c34-f9ff1438a284",
+    "name": "TC_UI_02",
+    "commands": [{
+      "id": "18ca5de7-3ab2-4807-9527-ae6e05a6ffa7",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f4a08a63-6e23-4fb7-ac00-e786ec2e4252",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "da00513f-387f-4425-af6a-628242a3ea68",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=2",
+      "targets": [
+        ["index=2"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7328699-b8af-4a71-9ef6-ea4ecff0bd2a",
+      "comment": "",
+      "command": "type",
+      "target": "id=userName",
+      "targets": [
+        ["id=userName", "id"],
+        ["name=Username", "name"],
+        ["css=#userName", "css:finder"],
+        ["xpath=//input[@id='userName']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "annatest_01@yahoo.com"
+    }, {
+      "id": "f5597d31-4146-48a4-a65d-949287c88136",
+      "comment": "",
+      "command": "click",
+      "target": "css=.login-body",
+      "targets": [
+        ["css=.login-body", "css:finder"],
+        ["xpath=//form/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c71d59d-61f5-483c-9d1a-e7a56d710dde",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=Password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05bd8b9c-325d-482c-be5e-a82a2b8fd575",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=Password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "xxx"
+    }, {
+      "id": "78da3997-0dd6-4ddb-9d53-f2eff5ef3fff",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginButtonText",
+      "targets": [
+        ["id=loginButtonText", "id"],
+        ["css=#loginButtonText", "css:finder"],
+        ["xpath=//span[@id='loginButtonText']", "xpath:attributes"],
+        ["xpath=//button[@id='btnLogin']/span[2]", "xpath:idRelative"],
+        ["xpath=//span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Einloggen')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1234f339-c612-4781-8520-c440a54a7132",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c426c3ed-c72c-4afa-9c34-f9ff1438a284"]
+  }],
+  "urls": ["https://www.alza.at/"],
+  "plugins": []
+}

@@ -1,0 +1,113 @@
+{
+  "id": "90dfdddb-d36f-4994-9e4c-2f9066140df6",
+  "version": "2.0",
+  "name": "https://www.alza.at/",
+  "url": "https://www.alza.at",
+  "tests": [{
+    "id": "62998f2f-86b8-4d50-b8f7-d58a3b3bab1e",
+    "name": "TC_UI_04",
+    "commands": [{
+      "id": "a235c852-a445-459c-a45b-813275a6a376",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "57f33b1d-609d-4894-b9a8-9bb4ef80cbfe",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7e9211b3-8032-4c0f-96e1-803d49c833a5",
+      "comment": "",
+      "command": "click",
+      "target": "id=lblLogin",
+      "targets": [
+        ["id=lblLogin", "id"],
+        ["linkText=Anmelden", "linkText"],
+        ["css=#lblLogin", "css:finder"],
+        ["xpath=//a[contains(text(),'Anmelden')]", "xpath:link"],
+        ["xpath=//a[@id='lblLogin']", "xpath:attributes"],
+        ["xpath=//div[@id='topbar']/span/span[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:loginBtnClick(this);')]", "xpath:href"],
+        ["xpath=//span[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Anmelden')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "84ee098d-38d7-40cc-bd98-1ab50156f608",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=2",
+      "targets": [
+        ["index=2"]
+      ],
+      "value": ""
+    }, {
+      "id": "40a4608f-b654-447a-b7f4-01a4214ed6f0",
+      "comment": "",
+      "command": "type",
+      "target": "id=userName",
+      "targets": [
+        ["id=userName", "id"],
+        ["name=Username", "name"],
+        ["css=#userName", "css:finder"],
+        ["xpath=//input[@id='userName']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "xxx@xxx.com"
+    }, {
+      "id": "02b409f6-058e-4e3e-8a7d-24abffdc6414",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=Password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b298a6b7-c1e6-459f-a233-78d06d557ab1",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=Password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "xxx"
+    }, {
+      "id": "7edd5d4a-b186-4301-925e-90083c403d3e",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnLogin",
+      "targets": [
+        ["id=btnLogin", "id"],
+        ["css=#btnLogin", "css:finder"],
+        ["xpath=//button[@id='btnLogin']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Einloggen')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b90be405-3483-42ae-82bd-41faf30348bc",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["62998f2f-86b8-4d50-b8f7-d58a3b3bab1e"]
+  }],
+  "urls": ["https://www.alza.at/"],
+  "plugins": []
+}

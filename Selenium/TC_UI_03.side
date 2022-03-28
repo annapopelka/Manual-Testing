@@ -1,0 +1,127 @@
+{
+  "id": "d0a03914-3fa2-4671-bd61-65b52df2365f",
+  "version": "2.0",
+  "name": "https://www.alza.at/",
+  "url": "https://www.alza.at",
+  "tests": [{
+    "id": "29f1cc22-885e-48cb-ad9b-98ecef4a4fe5",
+    "name": "TC_UI_03",
+    "commands": [{
+      "id": "966abbf0-d70f-47c1-b804-bf40a6f5413e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "33a6d07e-1394-43b2-a6b2-a9eebcd5939b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fcf2908f-cf52-4752-b521-f2ef77bf5622",
+      "comment": "",
+      "command": "click",
+      "target": "id=lblLogin",
+      "targets": [
+        ["id=lblLogin", "id"],
+        ["linkText=Anmelden", "linkText"],
+        ["css=#lblLogin", "css:finder"],
+        ["xpath=//a[contains(text(),'Anmelden')]", "xpath:link"],
+        ["xpath=//a[@id='lblLogin']", "xpath:attributes"],
+        ["xpath=//div[@id='topbar']/span/span[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:loginBtnClick(this);')]", "xpath:href"],
+        ["xpath=//span[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Anmelden')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "71ea8410-4987-48b8-ab40-d3155d321cac",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=2",
+      "targets": [
+        ["index=2"]
+      ],
+      "value": ""
+    }, {
+      "id": "d846d2a4-bc6e-4f05-91ce-70a2c3e89bd1",
+      "comment": "",
+      "command": "click",
+      "target": "id=userName",
+      "targets": [
+        ["id=userName", "id"],
+        ["name=Username", "name"],
+        ["css=#userName", "css:finder"],
+        ["xpath=//input[@id='userName']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "36162197-b3f9-4b9e-a4bb-f916b6a930ea",
+      "comment": "",
+      "command": "type",
+      "target": "id=userName",
+      "targets": [
+        ["id=userName", "id"],
+        ["name=Username", "name"],
+        ["css=#userName", "css:finder"],
+        ["xpath=//input[@id='userName']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "xxx@xxx.com"
+    }, {
+      "id": "1285ee71-3e09-4e9e-97fa-3070326b539d",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=Password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "830b2653-fe0d-477e-9808-10ef3fa0a526",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=Password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "annatest_01"
+    }, {
+      "id": "6ec3a817-96ae-4a78-8814-be6cb9ac279b",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginButtonText",
+      "targets": [
+        ["id=loginButtonText", "id"],
+        ["css=#loginButtonText", "css:finder"],
+        ["xpath=//span[@id='loginButtonText']", "xpath:attributes"],
+        ["xpath=//button[@id='btnLogin']/span[2]", "xpath:idRelative"],
+        ["xpath=//span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Einloggen')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "784d4c8c-5ef9-4c3e-9a03-60a6ce796b94",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["29f1cc22-885e-48cb-ad9b-98ecef4a4fe5"]
+  }],
+  "urls": ["https://www.alza.at/"],
+  "plugins": []
+}

@@ -1,0 +1,123 @@
+{
+  "id": "2c357be7-bc40-4db9-8008-aed8032a4112",
+  "version": "2.0",
+  "name": "https://www.alza.at/",
+  "url": "https://www.alza.at",
+  "tests": [{
+    "id": "76314b79-33ca-4307-bef6-5f4729f25914",
+    "name": "TC_UI_10",
+    "commands": [{
+      "id": "3a0f754d-d83e-4fee-b862-5c57c42e5767",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7ea96e0e-d593-4bdd-b8e1-a23b3c9cf25a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "51f343fa-2d76-4894-bd42-1eb4892b8161",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=1",
+      "targets": [
+        ["index=1"]
+      ],
+      "value": ""
+    }, {
+      "id": "57fbf6aa-1a7c-4c26-a4a4-024fabb43a0a",
+      "comment": "",
+      "command": "click",
+      "target": "id=userName",
+      "targets": [
+        ["id=userName", "id"],
+        ["name=Username", "name"],
+        ["css=#userName", "css:finder"],
+        ["xpath=//input[@id='userName']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "88d1f0a6-fcc2-43fe-a9ca-4af73f2098e7",
+      "comment": "",
+      "command": "type",
+      "target": "id=userName",
+      "targets": [
+        ["id=userName", "id"],
+        ["name=Username", "name"],
+        ["css=#userName", "css:finder"],
+        ["xpath=//input[@id='userName']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "annatest_01@yahoo.com"
+    }, {
+      "id": "288c1ca9-37ef-4ced-92a9-87fc95f3379e",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Einloggen')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1222a266-cc80-44d7-aeb7-66ba6a2ccff5",
+      "comment": "",
+      "command": "click",
+      "target": "id=forgotPasswordLink",
+      "targets": [
+        ["id=forgotPasswordLink", "id"],
+        ["linkText=Passwort vergessen?", "linkText"],
+        ["css=#forgotPasswordLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Passwort vergessen?')]", "xpath:link"],
+        ["xpath=//a[@id='forgotPasswordLink']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Account/forgotpassword?returnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Facr_values%3Dcountry%253AAT%2520regLink%253AProduction_registration%2520inherit%2520source%253AWeb%26alzaCallBack%26client_id%3Dalza%26culture%3Dde-DE%26nonce%3Drandom_nonce%26redirect_uri%3Dhttps%253A%252F%252Fwww.alza.at%252Fexternal%252Fcallback%26response_mode%3Dform_post%26response_type%3Dcode%2520id_token%26scope%3Demail%2520openid%2520profile%2520alza%2520offline_access%26state%3Drandom_state&countryCode=AT')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Passwort vergessen?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "35ee25c4-ac08-4c09-a103-8098b9c5bd55",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-login",
+      "targets": [
+        ["css=.btn-login", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Passwort zurücksetzen')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "328b124a-f17e-4049-9fe4-55584abc152e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Zurück zum Anmeldebildschirm",
+      "targets": [
+        ["linkText=Zurück zum Anmeldebildschirm", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Zurück zum Anmeldebildschirm')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Account/login?returnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Facr_values%3Dcountry%253AAT%2520regLink%253AProduction_registration%2520inherit%2520source%253AWeb%26alzaCallBack%26client_id%3Dalza%26culture%3Dde-DE%26nonce%3Drandom_nonce%26redirect_uri%3Dhttps%253A%252F%252Fwww.alza.at%252Fexternal%252Fcallback%26response_mode%3Dform_post%26response_type%3Dcode%2520id_token%26scope%3Demail%2520openid%2520profile%2520alza%2520offline_access%26state%3Drandom_state&countryCode=AT')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Zurück zum Anmeldebildschirm')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "0c105aa8-c328-4745-ac4a-a4bc3c74b044",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["76314b79-33ca-4307-bef6-5f4729f25914"]
+  }],
+  "urls": ["https://www.alza.at/"],
+  "plugins": []
+}
