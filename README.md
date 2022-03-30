@@ -1,8 +1,7 @@
 Manual-Testing <p>
   =============
   
-Scenario & Test Cases https://www.alza.at/ <br />
-  ---------------
+* Scenario & Test Cases https://www.alza.at/ <br />
 * In the document you will find Scenario and TS for login data, adding products to the basket and sending goods. <br />
 * In the document you will find 28 TC, Scenario and 2 bug reports.
 * You can run TC 01-10 in the Selenium folder in the Selenium program. Download [here Selenium 4.1.3](https://www.selenium.dev/selenium-ide/).<br />
