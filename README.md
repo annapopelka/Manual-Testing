@@ -6,7 +6,6 @@ Manual-Testing <p>
 * In the document you will find 28 TC, Scenario and 2 bug reports.
 * You can run TC 01-10 in the Selenium folder in the Selenium program. Download [here Selenium 4.1.3](https://www.selenium.dev/selenium-ide/).<br />
 
-  <iframe width="700" height="346" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=D4668E1381B0C307%2173701&authkey=%21AM5MMT3qhwJnW_U&em=2&wdDownloadButton=True&wdInConfigurator=True"></iframe>
   
   <br />
   <br />
